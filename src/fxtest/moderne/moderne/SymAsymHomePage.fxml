@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxtest.moderne.SymAsymHomePageController">
+   <children>
+      <Button fx:id="chiffSymetrique" layoutX="82.0" layoutY="80.0" mnemonicParsing="false" onAction="#goToSymetric" text="Chiffrement Symetrique" />
+      <Button fx:id="chiffAsymetrique" layoutX="82.0" layoutY="144.0" mnemonicParsing="false" onAction="#goToAsymetric" text="Chiffrement Asymetrique" />
+      <Button fx:id="retourArriere" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#retourArriere" text="Retour" />
+   </children>
+</AnchorPane>

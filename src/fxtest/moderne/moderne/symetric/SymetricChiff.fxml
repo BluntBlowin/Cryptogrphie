@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxtest.moderne.symetric.SymetricChiffController">
+   <children>
+      <Button fx:id="retourArriere" layoutX="21.0" layoutY="21.0" mnemonicParsing="false" onAction="#retourArriere" text="retour" />
+      <SplitPane dividerPositions="0.5" layoutX="10.0" layoutY="74.0" orientation="VERTICAL" prefHeight="481.0" prefWidth="803.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="DES" />
+                  <TextArea fx:id="TextClaireDES" layoutX="14.0" layoutY="31.0" prefHeight="185.0" prefWidth="269.0" promptText="Ecrire ce que vous voulez chiffrer/Déchiffrer par DES ici ..." />
+                  <TextArea fx:id="TextResultDES" layoutX="518.0" layoutY="26.0" prefHeight="185.0" prefWidth="269.0" promptText="Le résultat de Chifffrer/Déchiffrer DES va appariatre ici..." />
+                  <TextField fx:id="keyDES" layoutX="314.0" layoutY="48.0" prefHeight="25.0" prefWidth="116.0" promptText="clé DES de taille 8" />
+                  <Label fx:id="alerte" layoutX="314.0" layoutY="168.0" text="Alerte" textFill="#e40c0c" />
+                  <RadioButton fx:id="chiffrerDES" layoutX="314.0" layoutY="80.0" mnemonicParsing="false" text="Chiffrer" />
+                  <RadioButton fx:id="déchiffrerDES" layoutX="314.0" layoutY="102.0" mnemonicParsing="false" text="Déchiffrer" />
+                  <Button layoutX="314.0" layoutY="125.0" mnemonicParsing="false" onAction="#EncDecDES" text="Chiff/Déchiff" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="216.0" prefWidth="657.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="AES" />
+                  <TextArea fx:id="TextClaireAES" layoutX="14.0" layoutY="38.0" prefHeight="185.0" prefWidth="269.0" promptText="Ecrire ce que vous voulez chiffrer/Déchiffrer par AES ici ..." />
+                  <TextArea fx:id="TextResultAES" layoutX="511.0" layoutY="31.0" prefHeight="185.0" prefWidth="269.0" promptText="Le résultat de Chifffrer/Déchiffrer AES va appariatre ici..." />
+                  <TextField fx:id="keyAES" layoutX="309.0" layoutY="58.0" prefHeight="25.0" prefWidth="177.0" promptText="la clé AES de taille 16" />
+                  <RadioButton fx:id="chiffrerAES" layoutX="314.0" layoutY="94.0" mnemonicParsing="false" text="Chiffrer" />
+                  <RadioButton fx:id="déchiffrerAES" layoutX="314.0" layoutY="115.0" mnemonicParsing="false" text="Déchiffrer" />
+                  <Label fx:id="alerte2" layoutX="307.0" layoutY="174.0" text="Alerte" textFill="#d01919" />
+                  <Button layoutX="313.0" layoutY="139.0" mnemonicParsing="false" onAction="#EncDecAES" text="Chiff/Déchiff" textFill="#171717" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
