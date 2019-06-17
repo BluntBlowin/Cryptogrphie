@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="293.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxtest.HomePageController">
+   <children>
+      <Button fx:id="chiffClassBoutton" layoutX="34.0" layoutY="35.0" mnemonicParsing="false" onAction="#goToChiffClassic" text="Chiferement Classique" />
+      <Button fx:id="chiffModBoutton" layoutX="36.0" layoutY="91.0" mnemonicParsing="false" onAction="#goToChiffModern" text="Chiferement Moderne" />
+      <Button fx:id="hachageBoutton" layoutX="36.0" layoutY="147.0" mnemonicParsing="false" onAction="#goToHachage" prefHeight="25.0" prefWidth="133.0" text="Hachage" />
+      <Button fx:id="chiffClassBoutton1" layoutX="265.0" layoutY="35.0" mnemonicParsing="false" onAction="#goToCryptanalyse" prefHeight="25.0" prefWidth="135.0" text="Cryptanalyse" />
+   </children>
+</AnchorPane>

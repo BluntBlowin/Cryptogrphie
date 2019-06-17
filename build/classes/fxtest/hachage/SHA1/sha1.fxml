@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxtest.hachage.SHA1.Sha1Controller">
+    <children>
+      <Button fx:id="retourArriere" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#retourArriere" text="Retour" />
+      <TextArea fx:id="text" layoutX="86.0" layoutY="24.0" prefHeight="141.0" prefWidth="431.0" promptText="Ecrire ici votre Text..." />
+      <Button fx:id="Hacher" layoutX="233.0" layoutY="188.0" mnemonicParsing="false" onAction="#hacher" prefHeight="25.0" prefWidth="117.0" text="Hacher" />
+      <TextArea fx:id="textHache" layoutX="85.0" layoutY="229.0" prefHeight="33.0" prefWidth="431.0" promptText="Ecrire ici votre Text..." />
+      <Label fx:id="alert" layoutX="205.0" layoutY="295.0" textFill="#d70b0b">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
